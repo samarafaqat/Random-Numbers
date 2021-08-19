@@ -1,0 +1,16 @@
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+int main()
+{
+	int randNum1, randNum2,maxValue=999,minValue=99,sum,ans;
+	unsigned seed = time(0);
+	srand(seed);
+
+	randNum1 = (rand() % (maxValue - minValue + 1)) + minValue;
+	randNum2 = (rand() % (maxValue - minValue + 1)) + minValue;
+	cout << randNum1 << endl;
+	cout << randNum2 << endl;
+  
+  return 0;
+  }
